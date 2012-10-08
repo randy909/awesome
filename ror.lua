@@ -10,7 +10,7 @@
 
 module("ror")
 table5={
-   ["e"]={"myeclipse","MyEclipse"},
+   ["e"]={"eclipse","Eclipse"},
    ["g"]={"google-chrome","Google Chrome"},
    ["s"]={"soapui.sh","soapUI"},
 }
