@@ -8,7 +8,6 @@
 -- The "match string"  will match substrings.  So "Firefox" will match "blah Firefox blah"
 -- Use xprop to get this info from a window.  WM_CLASS(STRING) gives you "instance", "class".  WM_NAME(STRING) gives you the name of the selected window (usually something like the web page title for browsers, or the file name for emacs).
 
-module("ror")
 table5={
    ["e"]={"eclipse","Eclipse"},
    ["g"]={"google-chrome","Google Chrome"},

@@ -10,9 +10,6 @@ require("naughty")
 -- Load Debian menu entries
 require("debian.menu")
 
--- load the 'run or raise' function
-require("aweror")
-
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
 -- another config (This code will only ever execute for the fallback config)
@@ -335,8 +332,11 @@ clientbuttons = awful.util.table.join(
     awful.button({ modkey }, 1, awful.mouse.client.move),
     awful.button({ modkey }, 3, awful.mouse.client.resize))
 
+-- load the 'run or raise' function
+local ror = require("aweror")
+
 -- generate and add the 'run or raise' key bindings to the globalkeys table
-globalkeys = awful.util.table.join(globalkeys, aweror.genkeys(modkey))
+globalkeys = awful.util.table.join(globalkeys, ror.genkeys(modkey))
 
 -- Set keys
 root.keys(globalkeys)
