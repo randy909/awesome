@@ -9,7 +9,6 @@
 -- Use xprop to get this info from a window.  WM_CLASS(STRING) gives you "instance", "class".  WM_NAME(STRING) gives you the name of the selected window (usually something like the web page title for browsers, or the file name for emacs).
 
 table5={
-   ["e"]={"eclipse","Eclipse"},
-   ["g"]={"google-chrome","Google Chrome"},
-   ["s"]={"soapui.sh","soapUI"},
+   ["e"]={"/opt/eclipse/eclipse","Eclipse"},
+   ["g"]={"google-chrome","google-chrome"},
 }
